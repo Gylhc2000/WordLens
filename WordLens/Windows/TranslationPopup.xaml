@@ -1,0 +1,23 @@
+<Window x:Class="WordLens.Windows.TranslationPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WordLensTranslation"
+        Width="240" Height="Auto"
+        SizeToContent="Height"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ShowInTaskbar="False"
+        Topmost="True"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        Visibility="Collapsed">
+    <Border CornerRadius="10" Background="#F7FBF4" BorderBrush="#5B7C4B" BorderThickness="1"
+            Padding="12,8" Opacity="0.97">
+        <StackPanel>
+            <TextBlock x:Name="WordText" FontSize="18" FontWeight="Bold" Foreground="#1F3A14"
+                       TextWrapping="NoWrap" />
+            <TextBlock x:Name="TranslationText" FontSize="15" Foreground="#2E4A1F"
+                       TextWrapping="Wrap" Margin="0,2,0,0" />
+        </StackPanel>
+    </Border>
+</Window>

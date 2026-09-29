@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{C9A1B2C3-0001-4E6E-AFE1-012C4F427B47}</ProjectGuid>
+    <ProjectTypeGuids>{C7167F0D-BC9F-4E6E-AFE1-012C4F427B47}</ProjectTypeGuids>
+    <OutputType>AppContainerExe</OutputType>
+    <AppContainerApplication>true</AppContainerApplication>
+    <TargetPlatformVersion>10.0.26100.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.22000.0</TargetPlatformMinVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <EntryPointProjectUniqueName>..\WordLens\WordLens.csproj</EntryPointProjectUniqueName>
+    <GenerateAppxPackageOnBuild>False</GenerateAppxPackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WordLens\WordLens.csproj">
+      <SkipGetTargetFrameworkProperties>True</SkipGetTargetFrameworkProperties>
+      <PublishProfileFile>Properties\PublishProfiles\win10-x64.pubxml</PublishProfileFile>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+</Project>

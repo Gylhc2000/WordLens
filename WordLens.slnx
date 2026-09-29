@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DictionaryBuilder/DictionaryBuilder.csproj" />
+  <Project Path="WordLens.Tests/WordLens.Tests.csproj" />
+  <Project Path="WordLens/WordLens.csproj" />
+</Solution>
